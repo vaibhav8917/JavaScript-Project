@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Digital Clock</h2>
+        <div class="clock">
+            <div class="hour" id="hour">00</div>
+            <span>:</span>
+            <div class="minute" id="minute">00</div>
+            <span>:</span>
+            <div class="second" id="second">00</div>
+            <div class="session" id="session">AM</div>
+        </div>
+        <div class="data" onload="data()">
+            <span id="day"></span>,
+            <span id="date"></span>
+            <span id="month"></span>
+            <span id="year"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
