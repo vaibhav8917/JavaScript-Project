@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f8ff;
+}
+
+.container{
+    width: 700px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 16px 36px;
+    background-color: #fafad2;
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.user-input{
+    background-color: #fffafa;
+    border-radius: 10px;
+    padding: 12px 24px;
+    color: #696969;
+}
+.label-box{
+    width: 50%;
+}
+p{
+    padding: 10px 0;
+}
+label{
+    font-size: 1.2rem;
+}
+.input-box{
+    width: 50%;
+}
+input{
+    width: 200px;
+    padding: 5px 12px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    outline: none;
+}
+
+.button{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+#btn{
+    margin: 18px 0;
+    width: 150px;
+    padding: 6px 0;
+    border-radius: 10px;
+    background-color: #9932cc;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+#btn:hover{
+    background-color: #8b008b;
+}
+
+.total-expense{
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1e90ff;
+    font-size: 18px;
+}
+
+.expense-table{
+    width: 100%;
+    padding-block: 18px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+table{
+    width: 100%;
+}
+table,th,td{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 2px 3px;
+}
+th{
+    background-color: #1e90ff;
+}
+td{
+    background-color: white;
+}
+
+td button{
+    width: 50px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+td button:hover{
+    cursor: pointer;
+}
+
+
+
+
+

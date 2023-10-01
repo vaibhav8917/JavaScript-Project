@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Expense Tracker</h1>
+
+        <div class="user-input flex">
+
+            <div class="label-box">
+                <p><label for="date">Date</label></p>
+                <p><label for="amount">Amount  ₹</label></p>
+                <p><label for="description">Description</label></p>
+            </div>
+
+            <div class="input-box">
+                <p><input type="date" id="date" placeholder="none" required></p>
+                <p><input type="number" id="amount" placeholder="Enter amount" min="1" required></p>
+                <p><input type="text" id="description" placeholder="Description" required></p>
+            </div>
+        </div>
+        <div class="button">
+            <button id="btn">Add Expense</button>
+        </div>
+
+        <div class="total-expense">
+            <p>Total Expense ₹ <span id="totalExpense">0.00</span></p>
+        </div>
+
+        <div class="expense-table">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Description</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
