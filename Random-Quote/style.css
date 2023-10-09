@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(108, 174, 197);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    width: 400px;
+    height: 280px;
+    border: 0.8px solid snow;
+    padding: 4vh 6vh;
+    background-color: beige;
+    box-shadow: 0 0 5px rgb(148, 135, 135);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.box .quote{
+    height: 80%;
+    padding: 12px 0;
+    font-size: 1.4rem;
+    text-align:justify;
+    font-family: Helvetica;
+}
+
+button{
+    margin: 18px;
+    width: 150px;
+    padding: 3px 0;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:aquamarine;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+button:hover{
+    background-color: aqua;
+    border: 1px solid snow;
+}
