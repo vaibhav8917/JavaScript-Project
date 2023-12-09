@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+i{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.popup{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.popup .popup-box{
+    flex-direction: column;
+    width: 350px;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.popup .popup-box header{
+    width: 100%;
+    justify-content: space-between;
+    padding: 14px 18px;
+    border-bottom: 1px solid #000;
+}
+
+.popup .popup-box form{
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 14px;
+    padding: 14px 18px;
+    row-gap: 12px;
+}
+
+.popup .popup-box form label{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.popup .popup-box form input{
+    width: 100%;
+    padding: 4px 6px;
+    font-size: 1.2rem;
+}
+
+.popup .popup-box form textarea{
+    width: 100%;
+    height: 150px;
+    resize: none;
+    padding: 12px;
+    font-family: sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+}
+
+.popup .popup-box form button{
+    width: 100%;
+    padding: 6px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: cadetblue;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.popup .popup-box form button:hover{
+    background-color: blue;
+    color: #fff;
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    align-items: flex-start;
+    padding: 18px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.add-box{
+    width: 280px;
+    height: 270px;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 25px;
+    color: #219ebc;
+    border-radius: 8px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+.add-box i{
+    padding: 25px;
+    border: 2.5px dashed #219ebc;
+    border-radius: 50%;
+}
+
+.note-box{
+    width: 280px;
+    height: 270px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 18px;
+    position: relative;
+}
+.note-box h3{
+    padding-bottom: 12px;
+    letter-spacing: 0.8px;
+}
+
+.note-box .note-desc{
+    width: 100%;
+    text-align: justify;
+}
+
+.note-box .note-detail{
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 18px;
+    padding: 14px 0;
+    justify-content: space-between;
+    border-top: 1px solid #000;
+}
+
+.note-box .note-detail i{
+    font-size: 18px;
+    position: relative;
+}
+.date{
+    color: #343a40;
+}
+.action-menu{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid snow;
+    align-items: flex-start;
+    width: fit-content;
+    transition: 0.3s linear;
+    display: none;
+}
+.action-menu .edit-btn{
+    width: 100%;
+    column-gap: 14px;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 5px;
+    
+}
+.action-menu i{
+    font-size: 14px !important;
+}
+
+.action-menu .delete-btn{
+    width: 100%;
+    column-gap: 14px;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+span{
+    letter-spacing:1.4px;
+}
+.hover-btn{
+    transition: all 0.3s ease;
+}
+
+.hover-btn:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
+.fa-ellipsis-vertical:hover .action-menu{
+    display: flex;
+}
+
+
+
